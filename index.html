@@ -4,21 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignmrnt 05</title>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- tailwin css -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
     <!-- Custom CSS -->
     <style type="text/tailwindcss">
         @theme {
           --color-clifford: #da373d;
+          --color-body-color: #F4F7FF;
+          --color-text-brand: #00303C;
+          --color-secondary: #F4F7FF;
+
+          --font-poppins: "Poppins", sans-serif;
 
           --max-width: 1536px;
         }
       </style>
 </head>
-<body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-    <p class="">amr</p>
+<body class="bg-body-color font-poppins">
+    <header class="mt-6 mb-[20px]">
+        <!-- nav bar section -->
+        <nav class="max-w-(--max-width) mx-auto bg-white h-[100px] rounded-2xl flex justify-between">
+            <div class="flex items-center m-6 gap-3">
+                <img class="w-12 h-12" src="assets/logo.png" alt="page logo image">
+                <p class="text-4xl tracking-[3%] text-text-brand"><span class="font-light">Dev</span><span class="font-bold">Board</span></p>
+            </div>
+            <div class="flex items-center gap-9 mr-6">
+                <p class="flex items-center justify-between w-32 h-16 bg-secondary p-4 rounded-[32px]"><img class="w-8 h-8" src="assets/checkbox.png" alt="chackbox img"><span class="text-[32px] font-bold">23</span></p>
+                <img class="w-16 h-16" src="assets/theme-btn.png" alt="theme button image">
+            </div>
+        </nav>
+    </header>
+    <main>
+        
+    </main>
 </body>
 </html>
