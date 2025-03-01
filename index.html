@@ -39,7 +39,7 @@
                 <p class="text-4xl tracking-[3%] text-text-brand"><span class="font-light">Dev</span><span class="font-bold">Board</span></p>
             </div>
             <div class="flex items-center gap-9 mr-6">
-                <p class="flex items-center justify-between w-32 h-16 bg-secondary p-4 rounded-[32px]"><img class="w-8 h-8" src="assets/checkbox.png" alt="chackbox img"><span class="text-[32px] font-bold">23</span></p>
+                <p class="flex items-center justify-between w-32 h-16 bg-secondary p-4 rounded-[32px]"><img class="w-8 h-8" src="assets/checkbox.png" alt="chackbox img"><span id="task-complete" class="text-[32px] font-bold">23</span></p>
                 <img class="w-16 h-16" src="assets/theme-btn.png" alt="theme button image">
             </div>
         </nav>
@@ -56,7 +56,7 @@
                         <img class="w-16 h-16" src="assets/checkbox.png" alt="img checkbox">
                         <div>
                             <p class="text-base ">Task Assigned</p>
-                            <p class="font-bold text-[32px]">05</p>
+                            <p id="task-assign" class="font-bold text-[32px]">06</p>
                         </div>
                     </div>
                     <!-- 2 -->
@@ -91,14 +91,14 @@
                                 <p class="text-sm font-normal opacity-70">Deadline</p>
                                 <p class="text-base font-medium">21 March 2025</p>
                             </div>
-                            <button class="complete-btn bg-acent font-medium text-white py-3 px-5 rounded-lg text-base">Completed</button>
+                            <button class="complete-btn bg-acent font-medium text-white py-3 px-5 rounded-lg text-base " >Completed</button>
                         </div>
                     </div>
                     <!-- box 2 -->
                     <div class="p-6 bg-secondary rounded-2xl">
                         <div>
                             <p class="inline-block bg-white text-base font-normal py-2 px-4 rounded-lg mb-4">CloudSync</p>
-                            <h3 class="text-2xl font-medium mb-4">Add Dark Mode</h3>
+                            <h3 class="title text-2xl font-medium mb-4">Add Dark Mode</h3>
                             <div class="h-[92px] p-4 bg-white rounded-lg "><p class="h-[60px] line-clamp-2 leading-7  text-black opacity-50 text-base">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p></div>
                         </div>
                         <hr class="mt-4 mb-3 border-[rgba(55,82,253,0.2)]  border-dashed">
@@ -107,14 +107,14 @@
                                 <p class="text-sm font-normal opacity-70">Deadline</p>
                                 <p class="text-base font-medium">21 March 2025</p>
                             </div>
-                            <button class="bg-acent font-medium text-white py-3 px-5 rounded-lg text-base">Completed</button>
+                            <button class="complete-btn bg-acent font-medium text-white py-3 px-5 rounded-lg text-base">Completed</button>
                         </div>
                     </div>
                     <!-- box 3 -->
                     <div class="p-6 bg-secondary rounded-2xl">
                         <div>
                             <p class="inline-block bg-white text-base font-normal py-2 px-4 rounded-lg mb-4">SwiftPay</p>
-                            <h3 class="text-2xl font-medium mb-4">Optimize  Home page </h3>
+                            <h3 class="title text-2xl font-medium mb-4">Optimize  Home page </h3>
                             <div class="h-[92px] p-4 bg-white rounded-lg "><p class="h-[60px] line-clamp-2 leading-7  text-black opacity-50 text-base">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                                 and ensure onClick works properly</p></div>
                         </div>
@@ -124,14 +124,14 @@
                                 <p class="text-sm font-normal opacity-70">Deadline</p>
                                 <p class="text-base font-medium">21 March 2025</p>
                             </div>
-                            <button class="bg-acent font-medium text-white py-3 px-5 rounded-lg text-base">Completed</button>
+                            <button class="complete-btn bg-acent font-medium text-white py-3 px-5 rounded-lg text-base">Completed</button>
                         </div>
                     </div>
                     <!-- box 4 -->
                     <div class="p-6 bg-secondary rounded-2xl">
                         <div>
                             <p class="inline-block bg-white text-base font-normal py-2 px-4 rounded-lg mb-4">Meta</p>
-                            <h3 class="text-2xl font-medium mb-4">Add new emoji 🤲</h3>
+                            <h3 class="title text-2xl font-medium mb-4">Add new emoji 🤲</h3>
                             <div class="h-[92px] p-4 bg-white rounded-lg "><p class="h-[60px] line-clamp-2 leading-7  text-black opacity-50 text-base">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                                 and ensure onClick works properly</p></div>
                         </div>
@@ -141,14 +141,14 @@
                                 <p class="text-sm font-normal opacity-70">Deadline</p>
                                 <p class="text-base font-medium">21 March 2025</p>
                             </div>
-                            <button class="bg-acent font-medium text-white py-3 px-5 rounded-lg text-base">Completed</button>
+                            <button class="complete-btn bg-acent font-medium text-white py-3 px-5 rounded-lg text-base">Completed</button>
                         </div>
                     </div>
                     <!-- box 5 -->
                     <div class="p-6 bg-secondary rounded-2xl">
                         <div>
                             <p class="inline-block bg-white text-base font-normal py-2 px-4 rounded-lg mb-4">Google LLC</p>
-                            <h3 class="text-2xl font-medium mb-4">Integrate OpenAI API </h3>
+                            <h3 class="title text-2xl font-medium mb-4">Integrate OpenAI API </h3>
                             <div class="h-[92px] p-4 bg-white rounded-lg "><p class="h-[60px] line-clamp-2 leading-7  text-black opacity-50 text-base">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                                 and ensure onClick works properly</p></div>
                         </div>
@@ -158,14 +158,14 @@
                                 <p class="text-sm font-normal opacity-70">Deadline</p>
                                 <p class="text-base font-medium">21 March 2025</p>
                             </div>
-                            <button class="bg-acent font-medium text-white py-3 px-5 rounded-lg text-base">Completed</button>
+                            <button class="complete-btn bg-acent font-medium text-white py-3 px-5 rounded-lg text-base">Completed</button>
                         </div>
                     </div>
                     <!-- box 6 -->
                     <div class="p-6 bg-secondary rounded-2xl">
                         <div>
                             <p class="inline-block bg-white text-base font-normal py-2 px-4 rounded-lg mb-4">Glassdoar</p>
-                            <h3 class="text-2xl font-medium mb-4">Improve Job searching </h3>
+                            <h3 class="title text-2xl font-medium mb-4">Improve Job searching </h3>
                             <div class="h-[92px] p-4 bg-white rounded-lg "><p class="h-[60px] line-clamp-2 leading-7  text-black opacity-50 text-base">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                                 and ensure onClick works properly</p></div>
                         </div>
@@ -175,7 +175,7 @@
                                 <p class="text-sm font-normal opacity-70">Deadline</p>
                                 <p class="text-base font-medium">21 March 2025</p>
                             </div>
-                            <button class="bg-acent font-medium text-white py-3 px-5 rounded-lg text-base">Completed</button>
+                            <button class="complete-btn bg-acent font-medium text-white py-3 px-5 rounded-lg text-base">Completed</button>
                         </div>
                     </div>
                  </div>
@@ -192,13 +192,13 @@
                 </div>
                 <hr class="border-dashed border-[rgba(55,82,253,0.2)] mt-4 mb-6">
                 <!-- activity history -->
-                 <div>
-                    <div class="p-3 rounded-lg mb-7 bg-secondary">
+                 <div id="activity-history">
+                    <!-- <div class="p-3 rounded-lg mb-7 bg-secondary">
                         <p>You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
                     </div>
                     <div class="p-3 rounded-lg mb-7 bg-secondary">
                         <p>You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
-                    </div>
+                    </div> -->
                  </div>
             </div>
         </section>
