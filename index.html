@@ -28,6 +28,14 @@
 
           --max-width: 1536px;
         }
+        /* @layer base {
+            :root {
+             --color-body-color: #F4F7FF; 
+            }
+            body {
+                background-color: var(--color-body-color);
+            }
+        } */
       </style>
 </head>
 <body class="bg-body-color font-poppins text-text-brand tracking-(--my-tracking)">
@@ -40,7 +48,7 @@
             </div>
             <div class="flex items-center gap-9 mr-6">
                 <p class="flex items-center justify-between w-32 h-16 bg-secondary p-4 rounded-[32px]"><img class="w-8 h-8" src="assets/checkbox.png" alt="chackbox img"><span id="task-complete" class="text-[32px] font-bold">23</span></p>
-                <img class="w-16 h-16" src="assets/theme-btn.png" alt="theme button image">
+                <img id="theme-changer" class="w-16 h-16 cursor-pointer" src="assets/theme-btn.png" alt="theme button image">
             </div>
         </nav>
     </header>
@@ -188,7 +196,7 @@
                         <img class="w-6 h-6" src="assets/activity.png" alt="activity icon">
                         <p class="text-xl font-medium">Activity Log</p>
                     </div>
-                    <button class="bg-acent font-medium text-white py-3 px-5 rounded-lg text-base">Clear History</button>
+                    <button id="btn-clear-history" class="bg-acent font-medium text-white py-3 px-5 rounded-lg text-base cursor-pointer">Clear History</button>
                 </div>
                 <hr class="border-dashed border-[rgba(55,82,253,0.2)] mt-4 mb-6">
                 <!-- activity history -->

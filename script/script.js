@@ -2,10 +2,8 @@ document.getElementById('discover').addEventListener('click',function(){
     window.location.href = "blogs.html";
 })
 
-// handle current date
+// ...............................handle current date
 let currentDate = new Date();
-
-// console.log(localTime);
 
 let localString = currentDate.toDateString();
 let splitLocalString = localString.split(' ');
@@ -21,7 +19,7 @@ document.getElementById('date').innerText =`${date}`;
 
 
 
-// complete button task
+// ...........................................complete button task
 const activityHistory = document.getElementById('activity-history');
 const taskAssign = document.getElementById('task-assign');
 const taskComplete = document.getElementById('task-complete');
@@ -41,7 +39,7 @@ function localTime(){
 function createDiv(title, localTime){
     const div = document.createElement("div");
     div.classList.add("p-3", "rounded-lg", "mb-7", "bg-secondary")
-    div.innerHTML = `<p>You have Complete The Task ${title} ${localTime}</p>`
+    div.innerHTML = `<p>You have Complete The Task ${title} at ${localTime}</p>`
     // console.log(div);
     return div;
 }
@@ -65,12 +63,12 @@ function taskActivity(){
 let completeBtn = document.getElementsByClassName("complete-btn");
 
 function checkAllDisabled() {
-  let everyBtnDisabled = true; // Assume all are disabled
+  let everyBtnDisabled = true; 
 
   for (let i = 0; i < completeBtn.length; i++) {
-    if (!completeBtn[i].disabled) { // If any button is not disabled
+    if (!completeBtn[i].disabled) { 
       everyBtnDisabled = false;
-      break; // Exit loop early
+      break; 
     }
   }
 
@@ -78,7 +76,7 @@ function checkAllDisabled() {
     alert("congrates!!! You have completed all the current task");
   }
 }
-// Complete btn main activities
+// ........................................Complete btn main activities
 for (const btn of completeBtn) {
     btn.addEventListener('click',function(event){
         alert("Board updated Successfully");
@@ -102,9 +100,34 @@ for (const btn of completeBtn) {
 }
 
 
+// .....................................Clear History
+
+document.getElementById('btn-clear-history').addEventListener('click',function(){
+    const divs = activityHistory.querySelectorAll('div');
+    for (const div of divs) {
+        // div.style.display = "none";
+        div.classList.add("hidden");
+        // console.log(div);
+    }
+})
 
 
 
+// ...............................Theme color change activity
+
+document.getElementById('theme-changer').addEventListener('click',function(){
+    let myHexaValus = "0123456789ABCDEF";
+    let hexCode = "#";
+    for(let i=0; i<6; i++){
+        let randonNum = myHexaValus[Math.floor(Math.random()*16)];
+        hexCode += randonNum;
+    }
+    
+    
+    // document.documentElement.style.setProperty("--color-body-color", hexCode);
+    
+    document.body.style.backgroundColor = hexCode;
+})
 
 
 
